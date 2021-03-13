@@ -52,8 +52,8 @@ a {
   text-decoration: none;
 }
 body {
-  font-family: "raleway";
-}
-a,p {
   font-family: "Lato";
+}
+h1,h2 {
+  font-family: "raleway";
 }

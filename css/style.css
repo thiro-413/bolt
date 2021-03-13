@@ -46,11 +46,10 @@
 .fa-bars {
   border: 1px solid #ddd;
   border-radius: 4px;
-  box-sizing: border-box;
   color: #ddd;
   display: none;
   float: right;
-  font-size: 24px;
+  font-size: 16px;
   padding: 10px;
 }
 /* header */
@@ -61,6 +60,7 @@
 .top-wrapper {
   background-color: #f2f2f2;
   width: 100%;
+  padding-top: 70px;
 }
 .top-wrapper-inner {
   padding: 250px 0;
@@ -129,34 +129,32 @@
   font-size: 24px;
 }
 .work-inner__contents-box {
-  padding: 40px 0 90px 0;
+  margin-top: 40px;
 }
 .work-inner__contents-box__content {
   float: left;
   font-size: 0;
-  margin: 80px 0  0 100px;
+  margin: 80px 0 0 100px;
   opacity: 0.7;
 }
 .work-inner__contents-box__content:hover {
   opacity: 1;
 }
-.work-inner__contents-box__content:first-child {
+.work-inner__contents-box__content:nth-child(3n+1) {
   margin-left: 0;
 }
 .work-inner__contents-box__content:nth-child(-n+3) {
   margin-top: 0;
 }
-.work-inner__contents-box__content:nth-child(4) {
-  margin-left: 0;
-}
 .work-inner__form {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  margin-top: 90px;
 }
 .work-inner__form__text-box {
   box-sizing: border-box;
-  padding: 0 90px 0 0;
+  margin: 0 90px 0 0;
   text-align: center;
   width: 60%;
 }
@@ -193,7 +191,7 @@
 .skill-inner__contents-box {
   display: flex;
   justify-content: space-around;
-  padding-top: 50px;
+  margin-top: 50px;
 }
 .skill-inner__contents-box__content {
   font-size: 0;
@@ -224,14 +222,16 @@
   margin: 0 auto;
 }
 .sns-inner__contents-box__content {
-  color: #74cfae;
-  font-size: 50px;
-  line-height: 100px;
   text-align: center;
   width: 185px;
 }
 .sns-inner__contents-box__content:hover {
   background-color: white;
+}
+.sns-inner__contents-box__content__link {
+  color: #74cfae;
+  font-size: 50px;
+  line-height: 100px;
 }
   /* main-sns */
 /* main */
@@ -252,7 +252,7 @@
 
 /* media-query */
   /* TAB */
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .inner {
     width: 97%;
   }
@@ -308,9 +308,7 @@
   /* TAB */
   /* SP */
 @media screen and (max-width: 767px) {
-  .inner {
-    width: 97%;
-  }
+ 
   /* SP__header */
   .header-inner__item {
     display: none;
@@ -326,7 +324,6 @@
   /* SP__main-top */
 
 }
-  
 
   /* SP */
 /* media-query */
