@@ -349,7 +349,7 @@
 
   /* SP__sns */
   .sns-inner {
-    padding: 50px 15px;
+    padding: 50px 0;
   }
   .sns-inner__contents-box {
     display: block;
