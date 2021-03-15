@@ -19,31 +19,27 @@
   box-sizing: border-box;
   margin: 0 auto;
   max-width: 1100px;
-  width: 100%;
   text-align: center;
 }
 .header {
-  background-color: white;
+  background-color: #fff;
   position: fixed;
   top: 0;
   left: 0;
-  padding: auto;
   width: 100%;
   z-index: 10;
 }
 .header-inner {
   padding: 15px 0;
 }
-.fa-bolt {
+.header-logo {
   color: #4e4e4e;
-  display: inline-block;
   float: left;
   font-size: 40px;
 }
 .header-inner__item {
   background-color: #74cfae;
-  color: white;
-  display: inline-block;
+  color: #fff;
   float: right;
   font-size: 12px;
   padding: 14px 12px;
@@ -51,7 +47,7 @@
 .header-inner__item:hover {
   color: #333;
 }
-.fa-bars {
+.header-menu {
   border: 1px solid #ddd;
   border-radius: 4px;
   box-sizing: border-box;
@@ -65,10 +61,11 @@
 
 /* main */
   /* main-top */
+.main {
+  padding-top: 70px;
+}
 .top-wrapper {
   background-color: #f2f2f2;
-  width: 100%;
-  padding-top: 70px;
 }
 .top-wrapper-inner {
   padding: 250px 0;
@@ -89,7 +86,6 @@
 
 .can-do {
   background-color: #74cfae;
-  width: 100%;
 }
 .can-do-inner {
   padding-top: 50px;
@@ -102,24 +98,24 @@
 .can-do-inner__text-box {
   float: left;
   text-align: center;
+  padding-top: 20px;
   width: 60%;
 }
-.can-do-inner__text-box__text {
-  color: white;
+.can-do-inner__text-box__text_title {
+  color: #fff;
+  font-size: 24px;
+} 
+.can-do-inner__text-box__text_sentence {
+  color: #fff;
   font-size: 20px;
   margin-top: 35px;
   line-height: 24px;
 }
-.can-do-inner__text-box__text:first-child {
-  font-size: 24px;
-  margin-top: 20px;
-} 
   /* main-can-do */
 
   /* main-work */
 .work {
   background-color: #f2f2f2;
-  width: 100%;
 }
 .work-inner {
   padding: 60px 0 70px 0;
@@ -147,6 +143,9 @@
 .work-inner__contents-box__content:nth-child(-n+3) {
   margin-top: 0;
 }
+.work-inner__contents-box__content_link {
+  display: inline-block;
+}
 .work-inner__form {
   display: flex;
   justify-content: center;
@@ -163,7 +162,7 @@
 }
 .work-inner__form__btn {
   background-color: #74cfae;
-  color: white;
+  color: #fff;
   font-size: 12px;
   padding: 14px 20px;
 }
@@ -175,14 +174,13 @@
   /* main-skill */
 .skill {
   background-color: #4e4e4e;
-  width: 100%;
 } 
 .skill-inner {
   padding: 70px 0 100px 0;
   text-align: center;
 }
 .skill-inner__title {
-  color: white;
+  color: #fff;
   font-size: 24px;
 }
 .skill-inner__contents-box {
@@ -199,15 +197,14 @@
   margin-left: 0;
 }
 .skill-inner__contents-box__content__text {
-  color: white;
+  color: #fff;
   font-size: 16px;
-  padding: 20px;
+  margin-top: 20px;
 }
   /* main-skill */
   /* main-sns */
 .sns {
   background-color: #f2f2f2;
-  width: 100%;
 }
 .sns-inner {
   padding: 200px 0 200px 0;
@@ -223,25 +220,26 @@
   width: 185px;
 }
 .sns-inner__contents-box__content:hover {
-  background-color: white;
+  background-color: #fff;
 }
 .sns-inner__contents-box__content__link {
   color: #74cfae;
+  display: inline-block;
   font-size: 50px;
   line-height: 100px;
+  width: 100%;
 }
   /* main-sns */
 /* main */
 /* footer */
 .footer {
   background-color: #74cfae;
-  width: 100%;
 }
 .footer-inner {
   padding: 20px 0 25px 0;
 }
 .footer-inner__logo {
-  color: white;
+  color: #fff;
   float: right;
   font-size: 16px;
 }
@@ -267,7 +265,7 @@
   }
   .can-do-inner__image {
     float: none;
-    width: 100%;
+    margin: 0 auto;
   }
   .can-do-inner__text-box {
     float: none;
@@ -290,7 +288,6 @@
   }
   .work-inner__form__text {
     margin: 0 auto;
-    width: 100%;
   }
   .work-inner__form__btn  {
     display: inline-block;
@@ -331,7 +328,7 @@
   .header-inner__item {
     display: none;
   }
-  .fa-bars {
+  .header-menu {
     display: block;
   }
   /* SP__header */
@@ -346,22 +343,9 @@
   }
   .top-wrapper-inner__text-sentence {
     font-size: 30px;
-    width: 100%;
     margin: 20px auto 0;
   }
   /* SP__top */
-
-  /* SP__can-do */
-  .can-do-inner__text-box {
-    width: 100%;
-  }
-  /* SP__can-do */
-
-  /* SP__work */
-  .work-inner__form__text {
-    width: 100%;
-  }
-  /* SP__work */
 
   /* SP__sns */
   .sns-inner {
