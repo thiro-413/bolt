@@ -266,10 +266,9 @@
 
 .sns-inner__contents-box__content__link {
   color: #74cfae;
-  display: inline-block;
+  display: block;
   font-size: 50px;
   line-height: 100px;
-  width: 100%;
 }
 
   /* main-sns */
