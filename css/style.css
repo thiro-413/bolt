@@ -43,10 +43,10 @@
   float: right;
   font-size: 12px;
   padding: 14px 12px;
+  transition: all 0.3s ease;
 }
 
 .header-inner__item:hover {
-  transition: all 0.3s ease;
   color: #333;
 }
 
@@ -151,10 +151,10 @@
   font-size: 0;
   margin: 80px 0 0 100px;
   opacity: 0.7;
+  transition: all 0.3s ease;
 }
 
 .work-inner__contents-box li:hover {
-  transition: all 0.3s ease;
   opacity: 1;
 }
 
@@ -192,10 +192,10 @@
   color: #fff;
   font-size: 12px;
   padding: 14px 20px;
+  transition: all 0.3s ease;
 }
 
 .work-inner__form__btn:hover {
-  transition: all 0.3s ease;
   color: #333;
 }
 
@@ -256,11 +256,11 @@
 
 .sns-inner__contents-box li {
   text-align: center;
+  transition: all 0.3s ease;
   width: 185px;
 }
 
 .sns-inner__contents-box li:hover {
-  transition: all 0.3s ease;
   background-color: #fff;
 }
 
@@ -311,7 +311,7 @@
 
   .can-do-inner__text-box {
     float: none;
-    margin: 0 auto;
+    margin: 20px auto 0;
     width: 85%;
   }
 
@@ -320,7 +320,12 @@
     /* TAB__work */
   .work-inner__contents-box li {
     float: none;
-    margin: 0;
+    margin: 0 auto;
+    width: 300px;
+  }
+
+  .work-inner__contents-box li:nth-child(3n+1) {
+    margin-left: auto;
   }
 
   .work-inner__contents-box li:nth-child(3n+4) {
